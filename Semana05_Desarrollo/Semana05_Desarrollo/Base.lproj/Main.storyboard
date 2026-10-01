@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,17 +16,98 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calcular el IMC  de una Persona" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIt-Im-c01">
+                                <rect key="frame" x="46.666666666666657" y="179" width="300" height="26.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peso (Kg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEs-Im-c02">
+                                <rect key="frame" x="40" y="285.33333333333331" width="75" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wTf-Im-c03">
+                                <rect key="frame" x="150" y="278.5" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="wTw-Im-k01"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altura(m)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLt-Im-c04">
+                                <rect key="frame" x="40" y="340.66666666666669" width="72" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTf-Im-c05">
+                                <rect key="frame" x="150" y="333.83333333333331" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hTw-Im-k02"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTn-Im-c06">
+                                <rect key="frame" x="141.66666666666666" y="401" width="110" height="34.333333333333336"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="info.circle" catalog="system" title="Mostrar"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado IMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTt-Im-c07">
+                                <rect key="frame" x="131.66666666666666" y="475.33333333333331" width="130" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mostrar Resultado" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLb-Im-c08">
+                                <rect key="frame" x="20" y="529.33333333333337" width="353" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="tIt-Im-c01" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="k01-Im-t01"/>
+                            <constraint firstItem="tIt-Im-c01" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="k02-Im-t02"/>
+                            <constraint firstItem="pEs-Im-c02" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="k03-Im-t03"/>
+                            <constraint firstItem="pEs-Im-c02" firstAttribute="top" secondItem="tIt-Im-c01" secondAttribute="bottom" constant="80" id="k04-Im-t04"/>
+                            <constraint firstItem="wTf-Im-c03" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="k05-Im-t05"/>
+                            <constraint firstItem="wTf-Im-c03" firstAttribute="centerY" secondItem="pEs-Im-c02" secondAttribute="centerY" id="k06-Im-t06"/>
+                            <constraint firstItem="aLt-Im-c04" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="k07-Im-t07"/>
+                            <constraint firstItem="aLt-Im-c04" firstAttribute="top" secondItem="pEs-Im-c02" secondAttribute="bottom" constant="35" id="k08-Im-t08"/>
+                            <constraint firstItem="hTf-Im-c05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="k09-Im-t09"/>
+                            <constraint firstItem="hTf-Im-c05" firstAttribute="centerY" secondItem="aLt-Im-c04" secondAttribute="centerY" id="k10-Im-t10"/>
+                            <constraint firstItem="bTn-Im-c06" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="k11-Im-t11"/>
+                            <constraint firstItem="bTn-Im-c06" firstAttribute="top" secondItem="aLt-Im-c04" secondAttribute="bottom" constant="40" id="k12-Im-t12"/>
+                            <constraint firstItem="rTt-Im-c07" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="k13-Im-t13"/>
+                            <constraint firstItem="rTt-Im-c07" firstAttribute="top" secondItem="bTn-Im-c06" secondAttribute="bottom" constant="40" id="k14-Im-t14"/>
+                            <constraint firstItem="rLb-Im-c08" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k15-Im-t15"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rLb-Im-c08" secondAttribute="trailing" constant="20" id="k16-Im-t16"/>
+                            <constraint firstItem="rLb-Im-c08" firstAttribute="top" secondItem="rTt-Im-c07" secondAttribute="bottom" constant="30" id="k17-Im-t17"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightTextField" destination="hTf-Im-c05" id="oHt-Im-o02"/>
+                        <outlet property="resultLabel" destination="rLb-Im-c08" id="oRs-Im-o03"/>
+                        <outlet property="weightTextField" destination="wTf-Im-c03" id="oWt-Im-o01"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
