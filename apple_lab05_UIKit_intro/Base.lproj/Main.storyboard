@@ -22,12 +22,24 @@
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sheila Díaz Rojas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMb-Lb-02a">
+                                <rect key="frame" x="66.666666666666686" y="648.66666666666663" width="260" height="28.666666666666668"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="wNm-Lb-02a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dDs-Lb-01a" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cXc-Lb-01a"/>
                             <constraint firstItem="dDs-Lb-01a" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cYc-Lb-01a"/>
+                            <constraint firstItem="nMb-Lb-02a" firstAttribute="top" secondItem="dDs-Lb-01a" secondAttribute="bottom" constant="200" id="vSp-Lb-02a"/>
+                            <constraint firstItem="nMb-Lb-02a" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cXn-Lb-02a"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -41,6 +53,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
