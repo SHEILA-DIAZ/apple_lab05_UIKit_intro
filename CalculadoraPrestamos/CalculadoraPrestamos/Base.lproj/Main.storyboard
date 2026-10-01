@@ -68,6 +68,9 @@
                                 <rect key="frame" x="152.66666666666666" y="409.33333333333331" width="88" height="34.333333333333336"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Calcular"/>
+                                <connections>
+                                    <action selector="CalcularPrestamo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCt-Pr-a01"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota mensual" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMt-Pr-c09">
                                 <rect key="frame" x="131.66666666666666" y="483.66666666666669" width="130" height="24"/>
