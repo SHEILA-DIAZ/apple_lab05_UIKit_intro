@@ -8,3 +8,6 @@ build/
 
 # macOS
 .DS_Store
+
+# Guías y documentos del curso
+*.pdf
